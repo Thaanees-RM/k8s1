@@ -17,10 +17,10 @@ jobs:
 
     - name: Build Backend Image
       run: |
-        docker build -t rafeekthaanes/backend:v1 ./backend
-        docker push rafeekthaanes/backend:v1
+        docker build -t rafeekthaanees/backend:v1 ./backend
+        docker push rafeekthaanees/backend:v1
 
     - name: Build Frontend Image
       run: |
-        docker build -t rafeekthaanes/frontend:v1 ./frontend
-        docker push rafeekthaanes/frontend:v1
+        docker build -t rafeekthaanees/frontend:v1 ./frontend
+        docker push rafeekthaanees/frontend:v1
