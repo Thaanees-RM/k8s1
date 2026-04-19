@@ -1,0 +1,20 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: practice
+spec:
+  project: default   # ✅ THIS WAS MISSING
+
+  source:
+    repoURL: https://github.com/Thaanees-RM/k8s1
+    targetRevision: main
+    path: k8s/base
+
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: default
+
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
