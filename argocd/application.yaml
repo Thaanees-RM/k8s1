@@ -3,7 +3,7 @@ kind: Application
 metadata:
   name: practice
 spec:
-  project: default   # ✅ THIS WAS MISSING
+  project: default   # ✅ THIS WAS MISSING add successfully 
 
   source:
     repoURL: https://github.com/Thaanees-RM/k8s1
